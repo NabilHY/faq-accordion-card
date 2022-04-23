@@ -1,72 +1,175 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media only screen and (min-width: 376px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid transparent;
+        min-height: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        width: 60%;
+        height: 50%;
+        margin: 5% auto;
+        gap: 30px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border-radius: 10px;
+    }
+
+    .illustrator {
+        width: 375px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin: 10% -10%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 4% 3% 8% 15%;
+        gap: 15px;
+    }
+
+    h1 {
+        font-family: 'Kumbh Sans', sans-serif;
+        /* font-weight: 700; */
+        font-size: xx-large;
+    }
+
+    h2 {
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: medium;
+        font-weight: 300;
+    }
+
+    .fa-solid {
+        color:hsl(14, 88%, 65%);
+    }
+
+    hr {
+        border-top: 1px solid #f6f6f6;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .line :hover{
+        color:hsl(14, 88%, 65%);
+    }
 }
 
-html {
-    height: 100%;
-  }
 
-body {
-    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid transparent;  
-    min-height: 100%;
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid transparent;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 70%;
+        height: 80%;
+        margin: 25% auto;
+        gap: 15px;
+        align-items: center;
+        justify-content: start;
+        border-radius: 10px;
+    }
+
+    .illustrator {
+        width: 375px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin: -23% -10% 0% -10%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 3%;
+        gap: 15px;
+    }
+
+    h1 {
+        font-family: 'Kumbh Sans', sans-serif;
+        /* font-weight: 700; */
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .fa-solid {
+        color:hsl(14, 88%, 65%);
+    }
+
+    h2 :hover {
+        color: hsl(14, 88%, 65%);
+    }
+
+    p {
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 12px;
+    }
+
+    hr {
+        border-top: 1px solid #f6f6f6;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .line :active{
+        color:hsl(14, 88%, 65%);
+    }
 }
-
-main {
-    display: flex;
-    flex-direction: row;
-    background-color: #fff;
-    width: 60%;
-    height: 50%;
-    margin: 13% auto;
-    /* gap: 30px; */
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-radius: 10px;
-}
-
-.illustrator {
-    width: 375px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    margin: 5% -10%;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    padding: 4% 3% 8% 15%;
-    gap: 15px;
-}
-
-h1 {
-    font-family: 'Kumbh Sans', sans-serif;
-    /* font-weight: 700; */
-    font-size: xx-large;
-}
-
-h2 {
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: medium;
-}
-
-.slide {
-    display: flex;
-    flex-direction: row;
-}
-
-.line {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-}
-
